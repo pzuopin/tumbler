@@ -1,0 +1,90 @@
+html,body{
+    height: 100%;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.tumbler{
+    width: 126px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -125px;
+    margin-left: -62px;
+    background: url(../img/boy.png) no-repeat;
+    -webkit-transform-origin: 62px 250px;
+}
+.tumbler.left{
+    -webkit-animation: left 1s ease-in forwards;
+}
+@-webkit-keyframes left{
+    0%{
+        -webkit-transform: rotate(-50deg);
+    }
+    70%{
+        -webkit-transform: rotate(-90deg);
+    }
+    80%{
+        -webkit-transform: rotate(-82deg);
+    }
+    90%{
+        -webkit-transform: rotate(-90deg);
+    }
+    95%{
+        -webkit-transform: rotate(-87deg);
+    }
+    100%{
+        -webkit-transform: rotate(-90deg);
+    }
+}
+.tumbler.right{
+    -webkit-animation: right 1s ease-in forwards;
+}
+@-webkit-keyframes right{
+    0%{
+        -webkit-transform: rotate(50deg);
+    }
+    70%{
+        -webkit-transform: rotate(90deg);
+    }
+    80%{
+        -webkit-transform: rotate(82deg);
+    }
+    90%{
+        -webkit-transform: rotate(90deg);
+    }
+    95%{
+        -webkit-transform: rotate(87deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+    }
+}
+.ori-text{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    height: 200px;
+    line-height: 30px;
+    font-size: 24px;
+    display: none;
+}
+.restart{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
